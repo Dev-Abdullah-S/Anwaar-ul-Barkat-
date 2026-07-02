@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Anwaar ul Barkat</title>
+    <style>
+        :root {
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --border: #2a2d3a;
+            --text: #e4e6f0;
+            --text-muted: #9a9db5;
+            --accent: #7c6aef;
+            --accent-soft: rgba(124, 106, 239, 0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--accent), #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        section {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.75rem 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        p, li {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        p + p {
+            margin-top: 0.75rem;
+        }
+
+        ul {
+            margin: 0.75rem 0 0.75rem 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight-box {
+            background: var(--accent-soft);
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+            padding: 1rem 1.25rem;
+            margin: 1rem 0;
+        }
+
+        .highlight-box p {
+            color: var(--text);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem 0.75rem;
+            }
+
+            section {
+                padding: 1.25rem 1.25rem;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p>Anwaar ul Barkat &mdash; Last updated: July 2, 2025</p>
+        </header>
+
+        <section>
+            <h2>1. Introduction</h2>
+            <p>
+                Welcome to <strong>Anwaar ul Barkat</strong> ("we", "our", "us"). This privacy policy explains how we
+                collect, use, and protect your information when you use our mobile application (the "App"). By using
+                the App, you agree to the collection and use of information in accordance with this policy.
+            </p>
+            <p>
+                Anwaar ul Barkat is a digital book library that allows users to browse and read books directly within
+                the App. We are committed to protecting your privacy and ensuring transparency about our data practices.
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Information We Collect</h2>
+            <p>
+                Anwaar ul Barkat is designed with user privacy in mind. The App requires
+                <strong>no user registration or login</strong> to browse and read books. As a result, we collect
+                minimal information:
+            </p>
+
+            <p><strong>a) Automatically Collected Data</strong></p>
+            <ul>
+                <li><strong>Network requests</strong> — the App connects to our servers to fetch the book catalogue and book files. Standard server logs may record your device's IP address and request timestamps.</li>
+            </ul>
+
+            <p><strong>b) Locally Stored Data</strong></p>
+            <ul>
+                <li><strong>Cached files</strong> — downloaded book files (PDFs) and cover images may be cached on your device for faster access. This data remains entirely on your device and is not transmitted to us.</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p>We do <strong>not</strong> collect personal information such as your name, email address, phone number,
+                physical address, precise location, contacts, photos, or any other sensitive personal data from users of
+                the App.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. How We Use Your Information</h2>
+            <p>The minimal information we collect is used solely for the following purposes:</p>
+            <ul>
+                <li><strong>Service delivery</strong> — to display the book catalogue and deliver book content to you.</li>
+                <li><strong>App improvement</strong> — to maintain and improve the functionality and performance of the App.</li>
+                <li><strong>Security</strong> — to protect against misuse and ensure the stability of our services.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Data Storage &amp; Security</h2>
+            <p>
+                Book catalogue data is stored on <strong>Supabase</strong>, a trusted backend-as-a-service platform that
+                uses PostgreSQL databases with encryption at rest and in transit.
+            </p>
+            <p>
+                Book files and cover images are stored on <strong>Cloudflare R2</strong>, a secure cloud storage service.
+                Access to these files is controlled through authenticated server-side functions.
+            </p>
+            <p>
+                All data transmission between the App and our servers is encrypted using <strong>HTTPS/TLS</strong>.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Third-Party Services</h2>
+            <p>The App relies on the following third-party services to function:</p>
+            <ul>
+                <li><strong>Supabase</strong> — Database and backend services. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a></li>
+                <li><strong>Cloudflare</strong> — File storage via Cloudflare R2. <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a></li>
+                <li><strong>Google Play Services</strong> — Required for app distribution on Android. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+            </ul>
+            <p>
+                These third-party services may collect information as described in their respective privacy policies.
+                We encourage you to review them.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Data Sharing</h2>
+            <p>
+                We do <strong>not</strong> sell, trade, rent, or share your personal information with third parties for
+                marketing or advertising purposes.
+            </p>
+            <p>We may share data only in the following limited circumstances:</p>
+            <ul>
+                <li><strong>Service providers</strong> — with the third-party services listed above, solely to provide the App's functionality.</li>
+                <li><strong>Legal requirements</strong> — if required by law, regulation, legal process, or governmental request.</li>
+                <li><strong>Safety</strong> — to protect the rights, property, or safety of our users or the public.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>7. Data Retention</h2>
+            <p>
+                Since we do not collect personal user accounts or personal data, there is no user-specific data retained
+                on our servers. Standard server logs (such as IP addresses) are retained for a limited period for security
+                purposes and then automatically deleted.
+            </p>
+            <p>
+                Locally cached files on your device can be deleted at any time by clearing the App's data through your
+                device settings or by uninstalling the App.
+            </p>
+        </section>
+
+        <section>
+            <h2>8. Children's Privacy</h2>
+            <p>
+                The App does not knowingly collect any personal information from anyone, including children under the
+                age of 13. Since the App does not require registration or login and does not collect personal data,
+                it is safe for use by individuals of all ages.
+            </p>
+            <p>
+                If you are a parent or guardian and believe your child has somehow provided us with personal information,
+                please contact us so we can take appropriate action.
+            </p>
+        </section>
+
+        <section>
+            <h2>9. Changes to This Privacy Policy</h2>
+            <p>
+                We may update this privacy policy from time to time. Any changes will be reflected on this page with an
+                updated "Last updated" date. We encourage you to review this policy periodically.
+            </p>
+            <p>
+                Your continued use of the App after changes are posted constitutes your acceptance of the revised policy.
+            </p>
+        </section>
+
+        <section>
+            <h2>10. Contact Us</h2>
+            <p>
+                If you have any questions, concerns, or requests regarding this privacy policy or our data practices,
+                please contact us at:
+            </p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:library15121472@gmail.com">library15121472@gmail.com</a>
+            </p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Anwaar ul Barkat. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
